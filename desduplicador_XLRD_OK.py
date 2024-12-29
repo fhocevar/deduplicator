@@ -2,7 +2,7 @@ import xlrd
 import xlwt
 
 # Carregar o arquivo .xls
-wb = xlrd.open_workbook('sua_planilha.xls')
+wb = xlrd.open_workbook('empresas_multi_nutriespaco.xls')
 sheet = wb.sheet_by_index(0)
 
 # Extrair dados da planilha
