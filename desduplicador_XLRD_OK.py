@@ -2,7 +2,7 @@ import xlrd
 import xlwt
 
 # Carregar o arquivo .xls
-wb = xlrd.open_workbook('empresas_multi_nutriespaco.xls')
+wb = xlrd.open_workbook('empresas_multicidades_moçambique.xls')
 sheet = wb.sheet_by_index(0)
 
 # Extrair dados da planilha
@@ -26,5 +26,5 @@ for i, row in enumerate(dados_unicos):
         new_sheet.write(i, j, cell)
 
 # Salvar a nova planilha
-new_wb.save('planilha_sem_duplicatas.xls')
+new_wb.save('moçambique_sem_duplicatas.xls')
 print("Registros duplicados foram removidos com sucesso.")
